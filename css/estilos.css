@@ -4,21 +4,27 @@
 
 .menu {
     color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    font-size: 100%;
+    text-align: center;
 }
 
 .titulo {
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .tituloBlanco {
     text-align: center;
     color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .subtituloAzul {
     color: #0065a4;
     font-style: italic;
     font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .seccionGeneralServices {
@@ -52,11 +58,19 @@
 }
 
 .formQuote {
-    margin-top: 60px;
+    max-width: 525px;
+    background: #66a3c8;
+    border-radius: 5px;
+    box-shadow: 4px 5px 11px 4px #004e7f;
+    padding: 52px 25px 52px 25px;
+    margin-right: auto;
+    margin-left: auto;
+    /* margin-top: 60px;
     box-shadow: 0px 0px 10px 1px grey;
     border-radius: 5px;
     padding-bottom: 20px;
     background: #66a3c8;
+    max-width: 525px; */
 }
 
 .subTarjeta {
@@ -68,8 +82,8 @@
 }
 
 .tarjeta {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
 }
 
 .tarjetaAboutUs {
@@ -82,22 +96,26 @@
 
 .parrafoBlanco {
     color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .parrafoJustificado {
     text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .formFreeQuote {
     background-color: #66a3c8;
-    margin-left: 27%;
-    margin-right: 27%;
+    margin-left: 33%;
+    margin-right: 33%;
     border-radius: 5%;
 }
 
 .divInputFormFreeQuote {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 7%;
+    padding-bottom: 7%;
 }
 
 .inputFormFreeQuote {
