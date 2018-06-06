@@ -1,21 +1,31 @@
 <?php 
-error_reporting(0); 
-$name = $_POST['name']; 
-$email= $_POST['email']; 
-$phoneNumber = $_POST['phoneNumber']; 
-$service=$_POST['service']; 
-$zipCode=$_POST['zipCode']; 
-$radio= $_POST['GrupoOpciones2']; 
-$opinion=$_POST['opinion']; 
-$header = 'From: ' . $mail; 
+if (isset($_POST['name']) && isset($_POST['email'])){
+    $name =$_POST['name'];
+    $email = $_POST['email'];
+    $to= 'salcedodigna7@gmail.com';
+    $subject= 'Get My Free Quote';
+    $body = '<html>
+                <body>
+                    <h2> Get My Free Quote</h2>
+                    <hr>
+                    <p>Name:<br/>'.$name.'</p>
+                    <p>Email: <br/>'.$email.'</p>
+                </body>
+            </html>';
+  
+            $headers = "From: ".$name." <".$email.">\r\n";
+            $headers = "Reply-To: ".$email."\r\n";
+            $headers = "MINE-Version: 1.0\r\n";
+            $headers = "Content-type: text/html; charset-utf-8";
 
-$message = "Get My Free Quote" . $nombre . " \r\n";  
+            $send = mail($to,$subject,$body,$headers);
 
-$for = salcedodigna7@gmail.com; 
-$subject = "Get My Free Quote" ; 
-
-mail($for, $subject, utf8_decode($message), $header); 
-
-echo 'mensaje enviado correctamente'; 
-
+            if ($send){
+                echo 'br>';
+                echo 'Gracias'
+            }
+            else {
+                echo 'Error';
+            }
+        }        
 ?> 

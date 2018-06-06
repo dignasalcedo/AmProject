@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/web-fonts-with-css/css/fontawesome-all.min.css">
     <!--Estilos personalizados-->
     <link rel="stylesheet" href="css/estilos.css">
+
     <title>Am Project</title>
 </head>
 
@@ -18,39 +19,37 @@
     <!-- ***************************************************** Empieza el contenido ************************************************************-->
     <header>
         <div class="row">
-            <div class="col-6" style="text-align: left; padding-left: 5%">
-                <br/>
-                <img src="img/AM Project Logo-01.png" align="middle">
+            <div class="col-6" style="text-align: left;padding-top: 2%">
+               
+                <img src="img/AM Project Logo-01.png" class="img-fluid">
             </div>
-            <div class="col-6" style="text-align: right; padding-right: 5% ">
-                <p>
-                    <h4>
-                        <img src="img/Icono Telf-01.png" class="img-fluid" style="width: 6%;">
-                        <b> 305 - 447 7348</b>
-                    </h4>
-                    <h4>
-                        <i> FOR EVERY PROJECT ONE NUMBER</i>
-                    </h4>
-                    <br/>
-                    <a href="https://web.whatsapp.com/">
-                        <img src="img/Icono Whatsapp-01-01-01.png" class="img-fluid" style="width: 42px; height: 40px;">
-                    </a>
-                    <a href="https://www.instagram.com/">
-                        <img src="img/Icono Ig-01-01-01.png" class="img-fluid" style="width: 42px; height: 40px;">
-                    </a>
-                    <a href="https://www.facebook.com/">
-                        <img src="img//Icono Facebook-01-01.png" class="img-fluid" style="width: 42px; height: 40px;">
-                    </a>
-                    <a href="https://twitter.com/">
-                        <img src="img/Icono Twitter-01-01.png" class="img-fluid" style="width: 42px; height: 40px;">
-                    </a>
-                    <a href="https://www.youtube.com/">
-                        <img src="img/Icono YouTube-01-01.png" class="img-fluid" style="width: 42px; height: 40px;">
-                    </a>
-                </p>
+            <div class="col-6" style="text-align: right; padding-top: 2% ">
+                <h4>
+                    <img src="img/Icono Telf-01.png" class="img-fluid" >
+                    <b> 305 - 447 7348</b>
+                </h4>
+                <h4>
+                    <i> FOR EVERY PROJECT ONE NUMBER</i>
+                </h4>
+                <a href="https://web.whatsapp.com/">
+                    <img src="img/Icono Whatsapp-01-01-01.png" class="img-fluid">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="img/Icono Ig-01-01-01.png" class="img-fluid">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="img//Icono Facebook-01-01.png" class="img-fluid">
+                </a>
+                <a href="https://twitter.com/">
+                    <img src="img/Icono Twitter-01-01.png" class="img-fluid">
+                </a>
+                <a href="https://www.youtube.com/">
+                    <img src="img/Icono YouTube-01-01.png" class="img-fluid">
+                </a>
+
             </div>
         </div>
-        <hr/>
+        <hr style="size: 3">
         <div class="row">
             <div class="col-6" style="text-align: center; padding-right: 15%">
                 <img src="img/Blueprint Doors-01.png" class="img-fluid">
@@ -251,12 +250,12 @@
         <br/>
         <div class="row">
             <div class="col-6" style="text-align: right; padding-left: 5%">
-                <a target="_blank" href="pages/syskorCleverFilms.html">
+                <a href="pages/syskorCleverFilms.html">
                     <img src="img/Boton Fabricamos Puertas Syskor-01.png" style="width: 50%;">
                 </a>
             </div>
             <div class="col-6" style="text-align: left; padding-left: 5%">
-                <a target="_blank" href="pages/syskorCleverFilms.html">
+                <a href="pages/syskorCleverFilms.html">
                     <img src="img/Boton Clever Films-01.png" style="width: 50%;">
                 </a>
             </div>
@@ -270,19 +269,19 @@
             Get Your Free Quote
         </h1>
         <div class="container">
-            <form class="formQuote">
+            <form action="" method="POST" class="formQuote">
                 <div class="form-group">
                     <div class="form-group">
-                        <input type="text" id="name" class="form-control form-control-lg inputFormFreeQuote" placeholder="Name">
+                        <input type="text" name="name" class="form-control form-control-lg inputFormFreeQuote" placeholder="Name">
                     </div>
                     <div class="form-group">
-                        <input type="text" id="email" class="form-control form-control-lg inputFormFreeQuote" placeholder="E-mail Address">
+                        <input type="text" name="email" class="form-control form-control-lg inputFormFreeQuote" placeholder="E-mail Address">
                     </div>
                     <div class="form-group">
-                        <input type="text" id="phoneNumber" class="form-control form-control-lg inputFormFreeQuote" placeholder="Phone Number">
+                        <input type="text" name="phoneNumber" class="form-control form-control-lg inputFormFreeQuote" placeholder="Phone Number">
                     </div>
                     <div class="form-group">
-                        <select id="service" class="form-control form-control-lg inputFormFreeQuote">
+                        <select name="service" class="form-control form-control-lg inputFormFreeQuote">
                             <option value="0" disabled selected>Service</option>
                             <option value="1">Handyman and household maintenance</option>
                             <option value="2">High pressure cleaning</option>
@@ -290,7 +289,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <input type="text" id="zipCode" class="form-control form-control-lg inputFormFreeQuote" placeholder="Zipcode">
+                        <input type="text" name="zipCode" class="form-control form-control-lg inputFormFreeQuote" placeholder="Zipcode">
                     </div>
                     <div class="form-group bottonFormFreeQuote">
                         <input type="submit" value="Get My Free Quote" class="btn btn-primary btn-lg btn-block inputFormFreeQuote">
