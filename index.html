@@ -19,13 +19,12 @@
     <!-- ***************************************************** Empieza el contenido ************************************************************-->
     <header>
         <div class="row">
-            <div class="col-6" style="text-align: left;padding-top: 2%">
-               
+            <div class="col-6" style="text-align: left;padding-top: 2%;padding-left: 5%">
                 <img src="img/AM Project Logo-01.png" class="img-fluid">
             </div>
-            <div class="col-6" style="text-align: right; padding-top: 2% ">
+            <div class="col-6" style="text-align: right; padding-top: 2% ;padding-right: 5%">
                 <h4>
-                    <img src="img/Icono Telf-01.png" class="img-fluid" >
+                    <img src="img/Icono Telf-01.png" class="img-fluid">
                     <b> 305 - 447 7348</b>
                 </h4>
                 <h4>
@@ -49,24 +48,18 @@
 
             </div>
         </div>
-        <hr style="size: 3">
+        <hr class="linea">
         <div class="row">
             <div class="col-6" style="text-align: center; padding-right: 15%">
                 <img src="img/Blueprint Doors-01.png" class="img-fluid">
-            </div>
-            <div class="col-6" style="text-align: center; padding-left: 15% ">
-                <img src="img/Logo Syskor-01.png" class="img-fluid">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6" style="text-align: left; padding-left: 6%">
                 <p>
                     <h2>
                         Exclusive Dealer SYSKOR
                     </h2>
                 </p>
             </div>
-            <div class="col-6" style="text-align: right; padding-right: 9.5%">
+            <div class="col-6" style="text-align: center; padding-left: 15% ">
+                <img src="img/Logo Syskor-01.png" class="img-fluid">
                 <p>
                     <h2>
                         Exclusive Installer
@@ -74,7 +67,6 @@
                 </p>
             </div>
         </div>
-        <br/>
         <br/>
     </header>
     <nav class="navbar navbar-expand-md navbar-dark justify-content-end ">
@@ -104,10 +96,13 @@
     <section>
         <img src="img/AM Project Slide-01.jpg" style="width: 100%;">
     </section>
-    <section class="seccionGeneralServices" id="seccionGeneralServices">
+    <section id="seccionGeneralServices">
+        <br/>
+        <br/>
         <h1 class="titulo">
             General Services
         </h1>
+        <br/>
         <div class="card-deck tarjeta">
             <div class="card subTarjeta">
                 <img class="card-img-top" src="img/AM Project General Services1.jpg" alt="">
@@ -130,10 +125,12 @@
                 <img class="card-img-top" src="img/AM Project General Services6.jpg" alt="">
             </div>
         </div>
+        <br/>
+        <br/>
     </section>
     <section class="seccionAboutUs" id="seccionAboutUs">
         <h1 class="tituloBlanco">
-            About Us
+            <br/> About Us
         </h1>
         <br/>
         <div class="card tarjetaAboutUs">
@@ -164,10 +161,13 @@
         <br/>
         <br/>
     </section>
-    <section class="seccionServices" id="seccionServices">
+    <section id="seccionServices">
+        <br/>
+        <br/>
         <h1 class="titulo">
             Services
         </h1>
+        <br/>
         <div class="container">
             <h3 class="subtituloAzul">
                 High pressure cleaning
@@ -262,34 +262,37 @@
         </div>
         <br/>
         <br/>
-        <br/>
+
     </section>
     <section class="seccionFreeQuote" id="seccionFreeQuote">
+        <br/>
         <h1 class="tituloBlanco">
             Get Your Free Quote
         </h1>
+        <br/>
         <div class="container">
-            <form action="sendMail.php" method="POST" class="formQuote" enctype="text/plain">
+            <form action="sendMail.php" method="POST" class="formQuote" enctype="application/x-www-form-urlencoded">
                 <div class="form-group">
                     <div class="form-group">
-                        <input type="text" name="name" class="form-control form-control-lg inputFormFreeQuote" placeholder="Name">
+                        <input type="text" name="name" class="form-control form-control-lg inputFormFreeQuote" placeholder="Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="email" class="form-control form-control-lg inputFormFreeQuote" placeholder="E-mail Address">
+                        <input type="email" name="email" class="form-control form-control-lg inputFormFreeQuote" placeholder="E-mail Address" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="phoneNumber" class="form-control form-control-lg inputFormFreeQuote" placeholder="Phone Number">
+                        <input type="number" name="phoneNumber" class="form-control form-control-lg inputFormFreeQuote" placeholder="Phone Number"
+                            required>
                     </div>
                     <div class="form-group">
-                        <select name="service" class="form-control form-control-lg inputFormFreeQuote">
-                            <option value="0" disabled selected>Service</option>
-                            <option value="1">Handyman and household maintenance</option>
-                            <option value="2">High pressure cleaning</option>
-                            <option value="3">Paver installation and maintenance </option>
+                        <select name="service" class="form-control form-control-lg inputFormFreeQuote" required>
+                            <option value="" disabled selected>Service</option>
+                            <option value="Handyman_and_household_maintenance">Handyman and household maintenance</option>
+                            <option value="High_pressure_cleaning">High pressure cleaning</option>
+                            <option value="Paver_installation_and_maintenance">Paver installation and maintenance</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="zipCode" class="form-control form-control-lg inputFormFreeQuote" placeholder="Zipcode">
+                        <input type="number" name="zipCode" class="form-control form-control-lg inputFormFreeQuote" placeholder="Zipcode" required>
                     </div>
                     <div class="form-group bottonFormFreeQuote">
                         <input type="submit" value="Get My Free Quote" class="btn btn-primary btn-lg btn-block inputFormFreeQuote">
@@ -334,7 +337,7 @@
         </div>
     </section>
     <footer class="seccionFooter">
-        <p class="text-center parrafoBlanco"> Copyright &copy; 2018 - Am Projects . Terms and Conditions.</p>
+        <p class="text-center parrafoBlanco"> Copyright &copy; 2018 - AM Project. Terms and Conditions.</p>
     </footer>
 
     <!-- ***************************************************** Termina el contenido ************************************************************-->
